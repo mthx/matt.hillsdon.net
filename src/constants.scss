@@ -2,3 +2,4 @@ $background: #efefef;
 $text-color: #111;
 $decoration-color: #944;
 $subdued-color: #555;
+$card-background: scale-color($background, $lightness: +50);
