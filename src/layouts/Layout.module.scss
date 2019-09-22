@@ -1,0 +1,60 @@
+@import '../constants.scss';
+
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .img {
+      flex-grow: 1;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 1rem auto;
+      a {
+        display: block;
+        font-size: 1.75rem;
+        text-decoration: none;
+        color: $text-color;
+        line-height: 3rem;
+        margin: 0 1rem;
+        padding-right: 0.5rem;
+        border-right: 5px solid transparent;
+      }
+      .activeMenu {
+        border-right: 5px solid $decoration-color;
+      }
+    }
+  }
+  .content {
+    flex-grow: 1;
+    max-width: 800px;
+    padding: 1rem 1.5rem;
+    margin: auto;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    color: $subdued-color;
+    .footerContents {
+      padding: 1rem 1.5rem;
+      line-height: 1.75rem;
+      .contact {
+        display: flex;
+        justify-content: center;
+        a {
+          color: $subdued-color;
+          margin: 0 0.2em;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

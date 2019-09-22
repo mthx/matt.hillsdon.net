@@ -1,0 +1,9 @@
+@import '../constants.scss';
+
+.root {
+  border: 2px solid $subdued-color;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 200;
+}
