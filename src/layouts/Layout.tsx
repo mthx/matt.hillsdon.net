@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import me from './me.jpg';
 import styles from './Layout.module.scss';
 import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
+import Link from '../components/Link';
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,6 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
       </Helmet>
+
       <header>
         <div className={styles.img}>
           <Link to="/">
@@ -22,10 +23,10 @@ const Layout = ({ children }: LayoutProps) => {
           </Link>
         </div>
         <nav>
-          <Link activeClassName={styles.activeMenu} to="writing/">
+          <Link activeClassName={styles.activeMenu} to="/writing/">
             Writing
           </Link>
-          <Link activeClassName={styles.activeMenu} to="projects/">
+          <Link activeClassName={styles.activeMenu} to="/projects/">
             Projects
           </Link>
         </nav>

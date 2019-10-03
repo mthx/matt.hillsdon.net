@@ -7,11 +7,16 @@
   border-radius: 10px;
   background-color: $card-background;
   padding: 1rem 1.5rem;
-  p {
+  .content {
     margin-top: auto;
   }
-  a {
-    text-decoration: none;
-    color: $text-color;
+  .heading {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
   }
 }
