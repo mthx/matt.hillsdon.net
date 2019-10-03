@@ -25,8 +25,8 @@ const Layout = ({ children }: LayoutProps) => {
           <Link activeClassName={styles.activeMenu} to="writing/">
             Writing
           </Link>
-          <Link activeClassName={styles.activeMenu} to="code/">
-            Code
+          <Link activeClassName={styles.activeMenu} to="projects/">
+            Projects
           </Link>
         </nav>
       </header>
