@@ -26,9 +26,6 @@ p {
   margin-top: 1rem;
   line-height: 1.6rem;
 }
-p:first-child {
-  margin-top: 0;
-}
 p:last-child {
   margin-bottom: 0;
 }
@@ -56,4 +53,9 @@ ol {
   li {
     margin-bottom: 1rem;
   }
+}
+h1:first-child,
+h2:first-child,
+h3:first-child {
+  margin-top: 1rem;
 }

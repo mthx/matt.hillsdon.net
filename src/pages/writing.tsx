@@ -19,14 +19,18 @@ export const pageQuery = graphql`
   }
 `;
 
-const Writing = ({ data }) => {
+const Writing = ({ data }: { data: any }) => {
   const articles = data.allMdx.nodes;
   return (
     <Layout>
       <h1>Writing</h1>
       <CardGrid>
-        {articles.map(article => (
-          <Card title={article.frontmatter.title} to={article.fileAbsolutePath.replace(/.*\/src\/writing/, '').replace(/.mdx$/, '')}>
+        {articles.map((article: any) => (
+          <Card
+            date={new Date(article.frontmatter.date)}
+            title={article.frontmatter.title}
+            to={article.fileAbsolutePath.replace(/.*\/src\/posts/, '').replace(/.mdx$/, '')}
+          >
             <p>{article.excerpt}</p>
           </Card>
         ))}

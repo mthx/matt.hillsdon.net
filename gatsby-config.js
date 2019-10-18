@@ -13,8 +13,15 @@ module.exports = {
       options: {
         defaultLayouts: {
           default: require.resolve('./src/layouts/Layout.tsx'),
-          writing: require.resolve('./src/layouts/Article.tsx')
+          posts: require.resolve('./src/layouts/Article.tsx')
         }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts'
       }
     },
     {
@@ -27,14 +34,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/writing`,
-        name: 'writing'
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-page-creator',
-      options: {
-        path: `${__dirname}/src/writing`
+        path: `${__dirname}/src/posts`,
+        name: 'posts'
       }
     }
   ]

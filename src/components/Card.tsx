@@ -8,11 +8,20 @@ export interface CardProps {
   children: ReactNode;
   to: string;
   github?: string;
+  date?: Date;
 }
 
-const Card = ({ title, children, to, github }: CardProps) => {
+const monthYearFormat = (date: Date): string =>
+  // Evil but the toDateString is defined.
+  date
+    .toDateString()
+    .replace(/^.+? /g, '')
+    .replace(/\d\d/, '');
+
+const Card = ({ date, title, children, to, github }: CardProps) => {
   return (
     <div className={styles.root}>
+      {date && <small className={styles.date}>{monthYearFormat(date)}</small>}
       <div className={styles.heading}>
         <Link to={to}>
           <h3>{title}</h3>
