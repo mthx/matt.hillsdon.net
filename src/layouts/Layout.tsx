@@ -6,10 +6,11 @@ import Helmet from 'react-helmet';
 import Link from '../components/Link';
 
 interface LayoutProps {
+  style?: React.CSSProperties;
   children: ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ style, children }: LayoutProps) => {
   return (
     <div className={styles.root}>
       <Helmet>
@@ -31,7 +32,7 @@ const Layout = ({ children }: LayoutProps) => {
           </Link>
         </nav>
       </header>
-      <div className={styles.content}>{children}</div>
+      <div style={style} className={styles.content}>{children}</div>
       <footer>
         <div className={styles.footerContents}>
           <p>&copy; Matt Hillsdon {new Date().getFullYear()}</p>

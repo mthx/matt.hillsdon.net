@@ -26,6 +26,7 @@
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^2.1.5",
     "node-sass": "^4.9.3",
+    "prettier": "^1.14.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
@@ -35,11 +36,15 @@
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-order": "^1.0.0",
     "stylelint-scss": "^3.3.1",
-    "typescript": "^3.1.1",
-    "prettier": "^1.14.3",
     "tslint": "^5.11.0",
     "tslint-config-blvd": "^1.2.1",
     "tslint-config-prettier": "^1.15.0",
-    "tslint-plugin-prettier": "^2.0.0"
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
+    "gatsby-plugin-mdx": "^1.0.52"
   }
 }

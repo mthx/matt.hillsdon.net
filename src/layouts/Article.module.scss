@@ -1,0 +1,9 @@
+@import '../constants.scss';
+
+.root {
+  margin: 0 auto;
+  border: 5px solid $card-background;
+  border-radius: 10px;
+  background-color: $card-background;
+  padding: 1rem 1.5rem;
+}
