@@ -1,24 +1,15 @@
-### Description
-This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky) and Sass
+## Personal website
 
-### new project
-```
-gatsby new project_name https://github.com/ikeryo1182/gatsby-typescript-template
-```
+Gatsby/TypeScript/SCSS based personal site.
 
-### Keywords
-- TypeScript
-- TSLint
-- StyleLint
-- Prettier
-- Lint-Staged
-- Styling:SCSS
+Content is in this repository as MDX though I've not really used any
+fancy MDX features yet.
 
-### Features
-- Category and Tag for post
-- Type Safe by TypeScript
-- Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky)
+Deployed via Netlify to https://matt.hillsdon.net.
 
-### Deploy to Netlify
+## Acknowlegements
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ikeryo1182/gatsby-typescript-template)
+I used the following starter, though I've since simplified quite a bit:
+
+https://github.com/ikeryo1182/gatsby-typescript-template
+
