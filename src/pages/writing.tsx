@@ -11,7 +11,7 @@ export const pageQuery = graphql`
         fileAbsolutePath
         excerpt(pruneLength: 75)
         frontmatter {
-          date
+          date(formatString: "YYYY-MM-DD")
           title
         }
       }
