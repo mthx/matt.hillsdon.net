@@ -6,7 +6,7 @@ import Card from '../components/Card';
 
 export const pageQuery = graphql`
   query Writing {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }, filter: { fileAbsolutePath: { regex: "/writing/" } }) {
       nodes {
         fileAbsolutePath
         excerpt(pruneLength: 75)

@@ -28,13 +28,12 @@
       }
       .activeMenu {
         border-right: 5px solid $decoration-color;
-        border-radius: 10px;
       }
     }
   }
   .content {
     flex-grow: 1;
-    max-width: 800px;
+    max-width: 740px;
     margin: auto;
     padding: 1rem 1.5rem;
     font-size: 1.125rem;
