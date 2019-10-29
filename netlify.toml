@@ -10,6 +10,10 @@
   to = "https://matt.hillsdon.net/:splat"
   force = true
 [[redirects]]
+  from = "https://www.hillsdon.net/*"
+  to = "https://matt.hillsdon.net/:splat"
+  force = true
+[[redirects]]
   from = "https://dev.matt.hillsdon.net/*"
   to = "https://matt.hillsdon.net/:splat"
   force = true
