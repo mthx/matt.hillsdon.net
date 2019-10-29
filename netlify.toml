@@ -1,3 +1,15 @@
 [Settings]
 [build.environment]
   CI = "true"
+[[redirects]]
+  from = "/2018/03/24/argo-integration-review.html"
+  to = "/writing/2018-03/argo-integration-review"
+  force = true
+[[redirects]]
+  from = "https://hillsdon.net/*"
+  to = "https://matt.hillsdon.net/:splat"
+  force = true
+[[redirects]]
+  from = "https://dev.matt.hillsdon.net/*"
+  to = "https://matt.hillsdon.net/:splat"
+  force = true
