@@ -24,15 +24,17 @@ const Layout = ({ style, children }: LayoutProps) => {
           </Link>
         </div>
         <nav>
-          <Link activeClassName={styles.activeMenu} to="/writing/">
+          <Link activeClassName={styles.activeMenu} partiallyActive={true} to="/writing/">
             Writing
           </Link>
-          <Link activeClassName={styles.activeMenu} to="/projects/">
+          <Link activeClassName={styles.activeMenu} partiallyActive={true} to="/projects/">
             Projects
           </Link>
         </nav>
       </header>
-      <div style={style} className={styles.content}>{children}</div>
+      <div style={style} className={styles.content}>
+        {children}
+      </div>
       <footer>
         <div className={styles.footerContents}>
           <p>&copy; Matt Hillsdon {new Date().getFullYear()}</p>
