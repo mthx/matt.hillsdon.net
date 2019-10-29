@@ -9,6 +9,12 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-manifest',
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        // https://www.gatsbyjs.org/packages/gatsby-plugin-netlify/
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
