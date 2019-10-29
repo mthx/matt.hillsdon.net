@@ -25,7 +25,7 @@ const Projects = () => (
         <Card to="https://oxo.hillsdon.net" github="https://github.com/mthx/oxo" title="Tic-tac-toe">
           <p>Emoji based noughts and crosses implemented in TypeScript/React.</p>
         </Card>
-        <Card to="http://dice.hillsdon.net" github="https://github.com/mthx/dice" title="Dice">
+        <Card to="https://dice.hillsdon.net" github="https://github.com/mthx/dice" title="Dice">
           <p>Trivial dice app. Everything sucked or had ads</p>
         </Card>
       </CardGrid>
