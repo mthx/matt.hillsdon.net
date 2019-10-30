@@ -6,7 +6,7 @@ import GitHubIcon from './GitHubIcon';
 export interface CardProps {
   title: string;
   children: ReactNode;
-  to: string;
+  to?: string;
   github?: string;
   date?: Date;
 }
@@ -19,13 +19,12 @@ const monthYearFormat = (date: Date): string =>
     .replace(/\d\d/, '');
 
 const Card = ({ date, title, children, to, github }: CardProps) => {
+  const linkContents = <h3>{title}</h3>;
   return (
     <div className={styles.root}>
       {date && <small className={styles.date}>{monthYearFormat(date)}</small>}
       <div className={styles.heading}>
-        <Link to={to}>
-          <h3>{title}</h3>
-        </Link>
+        {to ? <Link to={to}>{linkContents}</Link> : linkContents}
         {github && (
           <Link to={github}>
             <GitHubIcon />

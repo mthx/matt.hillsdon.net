@@ -30,6 +30,19 @@ const Projects = () => (
         </Card>
       </CardGrid>
     </section>
+    <section>
+      <h2>Archive</h2>
+      <CardGrid>
+        <Card github="https://github.com/CoreFiling/reviki" title="Reviki">
+          <p>SVN-backed wiki as a Java web app.</p>
+          <p>
+            The reviki.org site is no longer available. You can{' '}
+            <a href="/archive/reviki/reviki-org-r1275.zip">download a ZIP of the latest wiki data</a>. I can provide a full SVN dump
+            on request.
+          </p>
+        </Card>
+      </CardGrid>
+    </section>
   </Layout>
 );
 
