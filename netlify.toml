@@ -17,3 +17,15 @@
   from = "https://dev.matt.hillsdon.net/*"
   to = "https://matt.hillsdon.net/:splat"
   force = true
+[[redirects]]
+  from = "https://dev.matt.hillsdon.net/*"
+  to = "https://matt.hillsdon.net/:splat"
+  force = true
+[[redirects]]
+  from = "https://reviki.org/*"
+  to = "https://matt.hillsdon.net/projects"
+  force = true
+[[redirects]]
+  from = "https://www.reviki.org/*"
+  to = "https://matt.hillsdon.net/projects"
+  force = true

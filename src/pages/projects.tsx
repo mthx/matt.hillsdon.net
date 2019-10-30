@@ -37,8 +37,8 @@ const Projects = () => (
           <p>SVN-backed wiki as a Java web app.</p>
           <p>
             The reviki.org site is no longer available. You can{' '}
-            <a href="/archive/reviki/reviki-org-r1275.zip">download a ZIP of the latest wiki data</a>. I can provide a full SVN dump
-            on request.
+            <a href="/archive/reviki/reviki-org-r1275.zip">download a ZIP of the latest wiki data</a>. I can provide a full SVN dump on
+            request.
           </p>
         </Card>
       </CardGrid>
